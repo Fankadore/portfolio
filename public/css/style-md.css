@@ -1,0 +1,158 @@
+body {
+  grid-template-columns: 7.25rem auto;
+  grid-template-rows: 6.25rem 1.25rem auto 2.5rem;
+  grid-template-areas:
+  "nav-menu header"
+  "navbar main"
+  "navbar main"
+  "footer footer";
+}
+
+.header--nav-active {
+  border-bottom: 2px solid #e7e247;
+}
+
+.header__title {
+  font-size: 3rem;
+}
+
+.nav-menu--active {
+  border-bottom: 2px solid #e7e247;
+}
+
+.nav-menu__icon {
+  visibility: hidden;
+	font-size: 4rem;
+}
+
+.navbar {
+  visibility: visible;
+  opacity: 1;
+  grid-area: navbar;
+  height: 100%;
+  border-bottom: none;
+  border-left: none;
+  border-right: #e7e247 2px solid;
+}
+.navbar--active {
+  visibility: visible;
+  height: 100%;
+}
+
+.navbar__menu {
+  margin: 1rem 0 0 0;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.navbar__link {
+  opacity: 1;
+}
+
+.main {
+  overflow: visible;
+}
+
+#projects {
+	flex-direction: row;
+	justify-content: space-evenly;
+  align-items: center;
+}
+
+.project {
+  grid-template-areas: 
+    "project-title"
+    "project-preview"
+    "project-footer";
+  margin-bottom: 0;
+}
+
+.project__title {
+  margin-bottom: 0.5rem;
+  max-width: 288px;
+}
+
+.project__preview {
+  border-radius: 25px 25px 0 0;
+}
+
+.project__info {
+  border-radius: 25px 25px 0 0;
+}
+.project__info--open {
+  animation: slideOpenUp 1s linear 0s 1 normal forwards;
+}
+.project__info--close {
+  animation: slideCloseDown 1s linear 0s 1 normal forwards;
+}
+
+.project__footer {
+  flex-direction: row;
+  justify-content: center;
+  width: 288px;
+  height: 4.5rem;
+  background-image: linear-gradient(#65655e, #32332b);
+	border-radius: 0 0 25px 25px;
+}
+
+.about__who-qualities > p {
+  flex-basis: auto;
+  padding: 0.5rem;
+}
+
+.contact {
+  flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.contact__box {
+  flex-direction: row;
+}
+
+.contact__icon {
+	font-size: 2rem;
+}
+
+.contact__link {
+  font-size: 1.25rem;
+}
+
+.footer {
+  background-image: linear-gradient(#32332b, #21221a);
+
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 0;
+  padding-left: 7.25rem;
+}
+
+.footer__container {
+	width: 35%;
+  position: static;
+  bottom: initial;
+  
+  flex-direction: row;
+	justify-content: space-between;
+}
+
+.footer__iconbox {
+  flex-direction: row;
+}
+
+.footer__icon {
+  font-size: 2rem;
+  margin: 0 0.25rem;
+  color: #65655e;
+}
+.footer__icon:hover {
+  font-size: 2.25rem;
+  margin: -0.25rem 0.125rem;
+  color: #e7e247;
+}
+
+.footer__copyright {
+  margin: auto 1rem;
+
+  flex-direction: row;
+}

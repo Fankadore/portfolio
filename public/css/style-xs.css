@@ -1,0 +1,152 @@
+body {
+  grid-template-columns: auto 0.5fr;
+  grid-template-rows: 4.5rem auto auto;
+  grid-template-areas:
+  "header nav-menu"
+  "main   main"
+  "footer footer";
+}
+
+.header--nav-active {
+  border-bottom: none;
+}
+
+.header__title {
+  font-size: 1.75rem;
+}
+
+.nav-menu--active {
+	border-bottom: none;
+}
+
+.nav-menu__icon {
+  visibility: visible;
+	font-size: 2.5rem;
+}
+
+.navbar {
+  visibility: hidden;
+  grid-area: main;
+  height: 0%;
+  border-bottom: #e7e247 2px solid;
+  border-left: none;
+  border-right: none;
+}
+.navbar--active {
+  visibility: visible;
+  height: 4rem;
+}
+
+.navbar__menu {
+  margin: 0;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.navbar__link {
+  opacity: 0;
+}
+
+.main {
+  overflow: visible;
+}
+
+#projects {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.project {
+  grid-template-areas: 
+    "project-title"
+    "project-preview"
+    "project-footer";
+	margin-bottom: 2rem;
+}
+
+.project__title {
+  margin-bottom: 0.5rem;
+  max-width: 288px;
+}
+
+.project__preview {
+  border-radius: 25px 25px 0 0;
+}
+
+.project__info {
+  border-radius: 25px 25px 0 0;
+}
+.project__info--open {
+  animation: slideOpenUp 1s linear 0s 1 normal forwards;
+}
+.project__info--close {
+  animation: slideCloseDown 1s linear 0s 1 normal forwards;
+}
+
+.project__footer {
+  flex-direction: row;
+  width: 288px;
+  height: 5rem;
+  background-image: linear-gradient(#65655e, #32332b);
+	border-radius: 0 0 25px 25px;
+}
+
+.about__who-qualities > p {
+  flex-basis: 100%;
+  padding: 0 0.5rem;
+}
+
+.contact {
+  flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.contact__box {
+  flex-direction: column;
+}
+
+.contact__icon {
+	font-size: 1.5rem;
+}
+
+.contact__link {
+  font-size: 1rem;
+}
+
+.footer {
+  background-image: linear-gradient(#65655e, #32332b);
+
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 0;
+}
+
+.footer__container {
+	width: 100%;
+  position: static;
+  bottom: initial;
+
+  flex-direction: column;
+	justify-content: center;
+}
+
+.footer__iconbox {
+  flex-direction: row;
+}
+
+.footer__icon {
+  font-size: 4rem;
+  margin: 0 0.5rem;
+}
+.footer__icon:hover {
+  font-size: 4.25rem;
+  margin: -0.125rem 0.375rem;
+}
+
+.footer__copyright {
+  margin: 0.25rem auto;
+
+  flex-direction: row;
+}
