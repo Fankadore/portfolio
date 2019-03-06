@@ -70,13 +70,12 @@ body {
   max-width: 288px;
 }
 
-.project__preview {
-  border-radius: 25px 25px 0 0;
-}
-
+.project__preview,
+.project__play,
 .project__info {
   border-radius: 25px 25px 0 0;
 }
+
 .project__info--open {
   animation: slideOpenUp 1s linear 0s 1 normal forwards;
 }

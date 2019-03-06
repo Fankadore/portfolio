@@ -25,10 +25,13 @@
 		<section id="projects" class="main__section main__section--active">
 			<project class="project">
 				<h2 class="project__title">grid-path-finder NPM Package</h2>
-				<video class="project__preview" width="288" height="288" muted autoplay loop>
+				<video id="video1" class="project__preview project__preview--paused" width="288" height="288" muted loop>
 					<source src="public/assets/project1-preview.mp4" type="video/mp4">
 					Please upgrade to a modern browser such as Firefox: <a href="https://www.mozilla.org/en-GB/firefox/new">https://www.mozilla.org/en-GB/firefox/new</a>
 				</video>
+				<div id="video1-btn" class="project__play project__play--paused">
+					<icon class="project__play-icon far fa-play-circle"></icon>
+				</div>
 				<div id="info1" class="project__info">
 					<div class="project__info-container">
 						An NPM package that finds the shortest path between two points in a grid maze. The approach is naive: recursively checking each direction and backtracking at dead-ends. Each node records its distance from the start to check if a shorter path already exists. I hope to rewrite this in a non-recursive manner, before attempting a more sophisticated approach such as Dijkstra's algorithm. Previews pending.
@@ -39,17 +42,20 @@
 						<icon class="project__icon project__icon-github fab fa-github"></icon>
 					</a>
 					<a href="https://www.npmjs.com/package/grid-path-finder" target="_blank">
-						<icon class="project__icon project__icon-play far fa-play-circle"></icon>
+						<icon class="project__icon project__icon-play fas fa-crosshairs"></icon>
 					</a>
 					<icon id="info1-icon" class="project__icon project__icon-info fas fa-info-circle"></icon>
 				</div>
 			</project>
 			<project class="project">
 				<h2 class="project__title">React app of some sort</h2>
-				<video class="project__preview" width="288" height="288" muted autoplay loop>
+				<video id="video2" class="project__preview project__preview--paused" width="288" height="288" muted loop>
 					<source src="public/assets/project2-preview.mp4" type="video/mp4">
 					Please upgrade to a modern browser such as Firefox: <a href="https://www.mozilla.org/en-GB/firefox/new">https://www.mozilla.org/en-GB/firefox/new</a>
 				</video>
+				<div id="video2-btn" class="project__play project__play--paused">
+					<icon class="project__play-icon far fa-play-circle"></icon>
+				</div>
 				<div id="info2" class="project__info">
 					<div class="project__info-container">
 						This will be a React app of some sort which reads/updates information from an API and refreshes the results. Previews pending.
@@ -57,16 +63,19 @@
 				</div>
 				<div class="project__footer">
 					<icon class="project__icon fab fa-github"></icon>
-					<icon class="project__icon far fa-play-circle"></icon>
+					<icon class="project__icon fas fa-crosshairs"></icon>
 					<icon id="info2-icon" class="project__icon project__icon-info fas fa-info-circle"></icon>
 				</div>
 			</project>
 			<project class="project">
 				<h2 class="project__title">Odyssey Online Engine</h2>
-				<video class="project__preview" width="288" height="288" muted autoplay loop>
+				<video id="video3" class="project__preview project__preview--paused" width="288" height="288" muted loop>
 					<source src="public/assets/project3-preview.mp4" type="video/mp4">
 					Please upgrade to a modern browser such as Firefox: <a href="https://www.mozilla.org/en-GB/firefox/new">https://www.mozilla.org/en-GB/firefox/new</a>
 				</video>
+				<div id="video3-btn" class="project__play project__play--paused">
+					<icon class="project__play-icon far fa-play-circle"></icon>
+				</div>
 				<div id="info3" class="project__info">
 					<div class="project__info-container">
 						An open source 2d MMORPG game engine written in JavaScript. Node backend utilising express, socket-io, mongoose and bcrypt. The frontend is created using the Phaser 3 framework, displaying in either WebGL or HTML5 canvas. Previews pending.
@@ -76,7 +85,7 @@
 					<a href="https://github.com/Fankadore/odyssey" target="_blank">
 						<icon class="project__icon fab fa-github"></icon>
 					</a>
-					<icon class="project__icon far fa-play-circle"></icon>
+					<icon class="project__icon fas fa-crosshairs"></icon>
 					<icon id="info3-icon" class="project__icon project__icon-info fas fa-info-circle"></icon>
 				</div>
 			</project>

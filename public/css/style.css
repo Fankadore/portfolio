@@ -164,6 +164,7 @@ h1, h2 {
 .project__title {
 	grid-area: project-title;
 
+	font-family: monospace;
 	font-size: 1.25rem;
 	text-align: center;
 }
@@ -175,9 +176,41 @@ h1, h2 {
 	background-color: #08090a;
 }
 
-.project__info {
+.project__preview--paused {
+	filter: grayscale();
+}
+
+.project__play {
 	grid-area: project-preview;
 	z-index: 1;
+	width: 288px;
+	height: 288px;
+	
+	cursor: pointer;
+	background-color: rgba(8, 9, 10, 0.8);
+	opacity: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.project__play--paused {
+	opacity: 1;
+}
+
+.project__play-icon {
+	color: #e7e247;
+	font-size: 100px;
+}
+
+.project__play:hover .project__play-icon {
+	color: #eef0f2;
+}
+
+.project__info {
+	grid-area: project-preview;
+	z-index: 2;
 	width: 288px;
 	height: 288px;
 
