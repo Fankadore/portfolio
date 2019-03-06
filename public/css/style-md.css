@@ -24,6 +24,9 @@ body {
   visibility: hidden;
 	font-size: 4rem;
 }
+.nav-menu__icon:hover {
+	color: #eef0f2;
+}
 
 .navbar {
   visibility: visible;
@@ -47,6 +50,9 @@ body {
 
 .navbar__link {
   opacity: 1;
+}
+.navbar__link:hover {
+	color: #eef0f2;
 }
 
 .main {
@@ -78,6 +84,10 @@ body {
   border-radius: 25px 25px 0 0;
 }
 
+.project__play:hover .project__play-icon {
+	color: #eef0f2;
+}
+
 .project__info--open {
   animation: slideOpenUp 1s linear 0s 1 normal forwards;
 }
@@ -94,10 +104,30 @@ body {
 	border-radius: 0 0 25px 25px;
 }
 
+.project__icon:hover {
+	color: #eef0f2;
+}
+
+
+.about__toggle:hover {
+	background-color: rgba(231, 226, 71, 0.6);
+	color: #08090a;
+	border: 3px solid #e7e247;
+	
+	font-weight: bold;
+}
+.about__toggle--active:hover {
+	color: #e7e247;
+	background-color: #08090a;
+	
+	font-weight: normal;
+}
+
 .about__who-qualities > p {
   flex-basis: auto;
   padding: 0.5rem;
 }
+
 
 .contact {
   flex-direction: row;
@@ -112,9 +142,21 @@ body {
 .contact__icon {
 	font-size: 2rem;
 }
+.contact__icon:hover {
+	animation: wiggle 250ms linear 0s 2;
+}
 
 .contact__link {
   font-size: 1.25rem;
+}
+.contact__link:hover ~ icon {
+	animation: wiggle 250ms linear 0s infinite;
+}
+
+.form__btn:hover {
+	background-color: #08090a;
+	
+	color: #e7e247;
 }
 
 .footer {

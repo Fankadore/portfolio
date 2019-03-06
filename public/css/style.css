@@ -73,9 +73,7 @@ h1, h2 {
 	cursor: pointer;
 	color: #e7e247;
 }
-.nav-menu__icon:hover {
-	color: #eef0f2;
-}
+
 .nav-menu--active .nav-menu__icon {
 	color: #eef0f2;
 }
@@ -108,9 +106,6 @@ h1, h2 {
 	font-family: 'Kelly Slab', sans-serif;
 	font-size: 1.625rem;
 	transition: color 0.25s;
-}
-.navbar__link:hover {
-	color: #eef0f2;
 }
 
 
@@ -204,10 +199,6 @@ h1, h2 {
 	font-size: 100px;
 }
 
-.project__play:hover .project__play-icon {
-	color: #eef0f2;
-}
-
 .project__info {
 	grid-area: project-preview;
 	z-index: 2;
@@ -266,9 +257,6 @@ h1, h2 {
 	color: #e7e247;
 	font-size: 48px;
 }
-.project__icon:hover {
-	color: #eef0f2;
-}
 .project__icon--active {
 	color: #eef0f2;
 }
@@ -308,22 +296,8 @@ h1, h2 {
 	text-align: center;
 	padding: 0.5rem;
 }
-.about__toggle:hover {
-	background-color: rgba(231, 226, 71, 0.6);
-	color: #08090a;
-	border: 3px solid #e7e247;
-	
-	font-weight: bold;
-}
 .about__toggle--active {
 	border: 3px solid #e7e247;
-}
-
-.about__toggle--active:hover {
-	color: #e7e247;
-	background-color: #08090a;
-	
-	font-weight: normal;
 }
 
 .about__display {
@@ -427,10 +401,6 @@ h1, h2 {
 	font-size: 2rem;
 }
 
-.contact__icon:hover {
-	animation: wiggle 250ms linear 0s 2;
-}
-
 .contact__link {
 	justify-self: center;
 	margin: auto;
@@ -440,10 +410,6 @@ h1, h2 {
 	color: #e7e247;
 	font-family: 'Roboto', sans-serif;
 	text-decoration: underline;
-}
-
-.contact__link:hover ~ icon {
-	animation: wiggle 250ms linear 0s infinite;
 }
 
 .form {
@@ -533,12 +499,6 @@ h1, h2 {
 	font-weight: bold;
 }
 
-.form__btn:hover {
-	background-color: #08090a;
-	
-	color: #e7e247;
-}
-
 .footer {
 	grid-area: footer;
 	
@@ -562,9 +522,6 @@ h1, h2 {
 	cursor: pointer;
 	color: #08090a;
 	transition: color 0.25s, font-size 0.25s, margin 0.25s;
-}
-.footer__icon:hover {
-	color: #eef0f2;
 }
 
 .footer__copyright {
